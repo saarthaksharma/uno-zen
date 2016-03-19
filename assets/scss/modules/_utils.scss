@@ -55,7 +55,7 @@
 @mixin btn-cover-with-border {
   border: 1px solid $gray-lightest;
 
-  @extend btn-cover;
+  // @extend btn-cover;
 }
 
 @mixin placeholder {

@@ -14,17 +14,62 @@
       font-size: 10px;
       letter-spacing: 2px;
     }
-
-    > a {
-      @extend %dotted-link;
-    }
-
     > span > a {
       bottom: 2px;
     }
   }
 }
-
+.dimmer-mark {
+    background: rgba(25,25,25,.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.post-link .post-time {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    color: #ddd;
+    margin-top: 2rem;
+    text-align: center;
+}
+.cover.container, .post-link .post-time, .post-link .post-title {
+    text-shadow: 0 .05em 0 rgba(0,0,0,.5);
+}
+.post-item {
+    margin: 0;
+}
+.post-item .post-tags {
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 3px;
+}
+// main, main>.content, #posts-list {
+//     padding: 0;
+//     margin: 0;
+// }
+.dimmer-mark-hover, .dimmer-mark:hover {
+    background: rgba(25,25,25,.25);
+}
+.post-link {
+    display: block;
+    height: 13.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post-link .post-title {
+    //width: 80%;
+    color: #f8f8f8;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    font-weight: 700;
+}
 #post-content a {
   @extend %dotted-link;
 }

@@ -3,11 +3,14 @@
 <h1 style="text-align: center;">Tag: {{tag.name}}.</h1>
 <ol id="posts-list">
   {{#foreach posts}}
-  <li>
-    <time datetime="{{date format="DD MMM YYYY"}}">{{date format="DD MMM YYYY"}}</time>
-    <a href="{{url}}" title="link to {{{title}}}">{{title}}</a>
-    <span class="post tags">{{tags separator=" "}}</span>
-  </li>
+    <li class="post-item">
+	    <a class="post-link" style="background-image:url('{{image}}')" href="{{url}}" title="link to {{{title}}}">
+	    	<div class="dimmer-mark"></div>	 
+	    	<h1 class="post-title">{{title}}</h1>   
+	    	<time class="post-time" datetime="{{date format="YYYY-MM-DDTHH:MM"}}">{{date format="DD MMM YYYY"}}</time>
+	    </a>
+	    <div class="post tags post-tags">{{tags separator=" "}}</div>
+    </li>
   {{/foreach}}
 </ol>
 
