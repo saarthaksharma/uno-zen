@@ -21,6 +21,7 @@
     <div id="post-content" class="{{post_class}}">
       {{content}}
     </div>
+    {{> mailchimp}}
 
     <div class="post related">
       {{#prev_post}}
@@ -31,7 +32,6 @@
         <a rel="next" id="next-btn" class="btn small square" href="{{url}}">{{title}} →</a>
       {{/next_post}}
     </div>
-    {{> mailchimp}}
     {{> comments}}
 
   </article>
